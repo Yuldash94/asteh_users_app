@@ -15,15 +15,26 @@ function UsersListRow({user, users, setUsersList, isAllowEdit}) {
       } else {
         return
       }
-
     }
-    
+    const changeValueHandlerLastDate = (itemValue, eValue) => {
+      if (isAllowEdit) {
+        setUsersList(users.map((us) => {
+          if (user.id === us.id && itemValue === user.last_visit_date) {
+            user.last_visit_date = eValue
+          }
+          return us
+        }))
+      } else {
+        return
+      }
+    }
+
   return (
     <div className='table--row'>
-        <UsersListCell item={user.id} changeValueHandler={changeValueHandler}/>
-        <UsersListCell item={user.name} changeValueHandler={changeValueHandler}/>
-        <UsersListCell item={userTypeName.name} changeValueHandler={changeValueHandler}/>
-        <UsersListCell item={user.last_visit_date.toString()} changeValueHandler={changeValueHandler}/>
+        <UsersListCell type={'text'} item={user.id} changeValueHandler={changeValueHandler}/>
+        <UsersListCell type={'text'} item={user.name} changeValueHandler={changeValueHandler}/>
+        <UsersListCell type={'text'} item={userTypeName.name} changeValueHandler={changeValueHandler}/>
+        <UsersListCell type={!isAllowEdit ? "text" : "datetime-local"} item={user.last_visit_date.toString()} changeValueHandler={changeValueHandlerLastDate}/>
     </div>
   )
 }

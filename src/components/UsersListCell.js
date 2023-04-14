@@ -1,6 +1,6 @@
 import React from 'react'
 
-function UsersListCell({item, changeValueHandler }) {
+function UsersListCell({item, changeValueHandler, type }) {
   const changeValue = (e) => {
     changeValueHandler(item, e.target.value);
   }
@@ -8,7 +8,7 @@ function UsersListCell({item, changeValueHandler }) {
   return (
     <div className='table--cell'>
         <input
-          type='text'
+          type={type}
           value={item}
           onChange={changeValue}
         />

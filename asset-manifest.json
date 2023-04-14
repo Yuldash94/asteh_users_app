@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/asteh_users_app/static/css/main.4c0631cf.css",
+    "main.js": "/asteh_users_app/static/js/main.c2c51952.js",
+    "index.html": "/asteh_users_app/index.html",
+    "main.4c0631cf.css.map": "/asteh_users_app/static/css/main.4c0631cf.css.map",
+    "main.c2c51952.js.map": "/asteh_users_app/static/js/main.c2c51952.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c0631cf.css",
+    "static/js/main.c2c51952.js"
+  ]
+}

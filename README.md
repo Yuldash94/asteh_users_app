@@ -1,4 +1,4 @@
-## Приложение для отображения спсика пользователей из файла json формата в табличной форме
+## Приложение для отображения списка пользователей из файла json формата в табличной форме
 
 ### `npm run start`
 
@@ -10,7 +10,10 @@
 
 ### `test deploy in GitHub Pages `
 
-`https://yuldash94.github.io/asteh_users_app/`
+https://yuldash94.github.io/asteh_users_app/
+
+###
+
 логин и пароли для теста
 
 ###
